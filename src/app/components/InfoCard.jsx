@@ -19,7 +19,7 @@ const InfoCard = () => {
 
             <div className="flex-grow py-8 space-y-5">
                 <div className="space-y-4">
-                    <ContactItem icon={<FaEnvelope />} label="Email" value="arnobpaul@gmail.com" />
+                    <ContactItem icon={<FaEnvelope />} label="Email" value="arnobpaulbd@gmail.com" />
                     <ContactItem icon={<FaPhoneAlt />} label="Phone" value="+880 1616-293446" />
                     <ContactItem icon={<FaMapMarkerAlt />} label="Address" value="Mymensingh, BD" />
                 </div>

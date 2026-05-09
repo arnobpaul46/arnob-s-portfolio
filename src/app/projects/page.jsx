@@ -8,6 +8,7 @@ import {
   FaExternalLinkAlt,
   FaFolderOpen,
 } from "react-icons/fa";
+import Link from "next/link";
 
 const projects = [
   {
@@ -175,7 +176,7 @@ const ProjectPage = () => {
               {/* Links */}
               <div className="flex items-center gap-6 pt-4 border-t border-white/5">
 
-                <a
+                <Link
                   href={project.live}
                   target="_blank"
                   rel="noreferrer"
@@ -183,9 +184,9 @@ const ProjectPage = () => {
                 >
                   <FaExternalLinkAlt size={14} />
                   Live Demo
-                </a>
+                </Link>
 
-                <a
+                <Link
                   href={project.repo}
                   target="_blank"
                   rel="noreferrer"
@@ -193,7 +194,7 @@ const ProjectPage = () => {
                 >
                   <FaGithub size={16} />
                   Source Code
-                </a>
+                </Link>
               </div>
             </div>
           </motion.div>
