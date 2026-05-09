@@ -12,15 +12,31 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+body {
+  background: #020617; /* ডার্ক থিম নিশ্চিত করতে */
+  color: #ededed;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden; /* ডানে-বামে স্ক্রল বন্ধ */
+}
+
+/* স্ক্রলবার হাইড করার জন্য ইউনির্ভাসাল ক্লাস */
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none !important;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* শুধুমাত্র ডেস্কটপে মেইন বডির স্ক্রল বন্ধ রাখা (যদি ফিক্সড লেআউট চান) */
+@media (min-width: 768px) {
+  body {
+    overflow: hidden;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
 }
