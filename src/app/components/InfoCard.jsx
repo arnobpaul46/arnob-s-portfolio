@@ -9,7 +9,7 @@ const InfoCard = () => {
                 <div className="relative w-32 h-32 rounded-full">
 
                     {/* Inner image with border */}
-                    <div className="relative w-full h-full rounded-full border-2 border-blue-900 overflow-hidden">
+                    <div className="relative w-full h-full rounded-full border-2 border-gray-600 overflow-hidden">
                         <Image
                             src="/arnobpaul.webp"
                             fill
