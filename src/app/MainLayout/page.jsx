@@ -9,7 +9,7 @@ const MainLayout = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
-    <div className="min-h-screen bg-[#020617] bg-[radial-gradient(circle_at_top_right,_#1e293b,_transparent)] p-0 md:p-8 lg:p-12 flex items-center justify-center relative selection:bg-blue-500/30 selection:text-blue-200">
+    <div className="min-h-screen bg-[#020617] bg-[radial-gradient(circle_at_top_right,_#1e293b,_transparent)] p-0 md:p-8 lg:p-12 flex items-center justify-center relative selection:bg-blue-500/30 selection:text-blue-200 ">
       
       <AnimatePresence>
         {isLoading && <LoadingScreen onFinished={() => setIsLoading(false)} />}
@@ -23,7 +23,7 @@ const MainLayout = ({ children }) => {
           className="w-[90%] max-w-[1200px] flex flex-col md:grid md:grid-cols-12 md:h-[90vh] md:rounded-[2.5rem] overflow-hidden border-none md:border md:border-white/5 shadow-2xl bg-[#0b0f1a]/40 backdrop-blur-sm relative"
         >
           {/* Sidebar */}
-          <div className="md:col-span-4 lg:col-span-3 bg-white/5 backdrop-blur-3xl p-6 md:p-8 border-b md:border-b-0 md:border-r border-white/5">
+          <div className="md:col-span-4 lg:col-span-3 bg-white/5 backdrop-blur-3xl pt-12  p-6 md:p-8 border-b md:border-b-0 md:border-r border-white/5">
               <InfoCard/>
           </div>
 

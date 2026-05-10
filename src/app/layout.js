@@ -9,8 +9,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className="antialiased selection:bg-blue-500/30 scrollbar">
+    <html lang="en" suppressHydrationWarning data-scroll-behavior="smooth">
+      <body className="antialiased selection:bg-blue-500/30 no-scrollbar">
         <MainLayout>
           {children}
         </MainLayout>

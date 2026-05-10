@@ -6,8 +6,17 @@ const InfoCard = () => {
     return (
         <div className="flex flex-col h-full text-white">
             <div className="flex flex-col items-center justify-center gap-4 pb-8 border-b border-white/10">
-                <div className="relative w-30 h-30 rounded-full border-4 border-gray-800 shadow-xl overflow-hidden">
-                    <Image src="/arnobpaul.webp" fill alt="Arnob Paul" className="object-cover transition-transform duration-500 group-hover:scale-110" />
+                <div className="relative w-32 h-32 rounded-full">
+
+                    {/* Inner image with border */}
+                    <div className="relative w-full h-full rounded-full border-2 border-blue-900 overflow-hidden">
+                        <Image
+                            src="/arnobpaul.webp"
+                            fill
+                            alt="Arnob Paul"
+                            className="object-cover rounded-full"
+                        />
+                    </div>
                 </div>
                 <div className="text-center">
                     <h1 className="text-2xl font-bold tracking-tight">Arnob Paul</h1>
@@ -25,15 +34,18 @@ const InfoCard = () => {
                 </div>
 
                 <div className="pt-6 border-t border-white/10 flex flex-col gap-2">
-                    <Link href={'https://www.linkedin.com/in/arnob-paul'}><SocialLink icon={<FaLinkedin />} text="linkedin/in/arnobpaul" /></Link>
-                    <Link href={'https://github.com/arnobpaul46'}><SocialLink icon={<FaGithub />} text="github/arnobpaul" /></Link>
-                    <Link href={'https://www.facebook.com/mr.arnob.paul'}><SocialLink icon={<FaFacebook />} text="facebook/arnobpaul" /></Link>
+                    <Link href={'https://www.linkedin.com/in/arnob-paul'} target="_blank"
+                        rel="noopener noreferrer"><SocialLink icon={<FaLinkedin />} text="linkedin/in/arnobpaul" /></Link>
+                    <Link href={'https://github.com/arnobpaul46'} target="_blank"
+                        rel="noopener noreferrer"><SocialLink icon={<FaGithub />} text="github/arnobpaul" /></Link>
+                    <Link href={'https://www.facebook.com/mr.arnob.paul'} target="_blank"
+                        rel="noopener noreferrer"><SocialLink icon={<FaFacebook />} text="facebook/arnobpaul" /></Link>
                 </div>
             </div>
 
-            <button className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-blue-700 to-sky-500 py-3 rounded-xl font-bold hover:shadow-blue-500/40 hover:-translate-y-1">
-                Download CV <FaDownload size={12}/>
-            </button>
+            <Link href={"/"}><button className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-blue-700 to-sky-900 py-3 rounded-xl font-bold hover:shadow-blue-500/40 hover:-translate-y-1 hover:cursor-pointer">
+                Download My CV <FaDownload size={12} />
+            </button></Link>
         </div>
     );
 };

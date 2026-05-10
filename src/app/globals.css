@@ -28,6 +28,17 @@ body {
     -ms-overflow-style: none !important;
     scrollbar-width: none !important;
   }
+   .animate-spin-slow {
+    animation: spin 4s linear infinite;
+  }
+ 
+  .rgb-glow {
+    box-shadow: 0 0 20px 2px rgba(255,0,0,0.7),
+                0 0 20px 2px rgba(255,255,0,0.7),
+                0 0 20px 2px rgba(0,255,0,0.7),
+                0 0 20px 2px rgba(0,0,255,0.7);
+  }
+
 }
 
 /* শুধুমাত্র ডেস্কটপে মেইন বডির স্ক্রল বন্ধ রাখা (যদি ফিক্সড লেআউট চান) */
@@ -40,3 +51,4 @@ body {
 html {
   scroll-behavior: smooth;
 }
+

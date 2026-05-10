@@ -18,7 +18,7 @@ const projects = [
     image: "/skillsphere.webp",
     live: "https://skill-sphere-a8-arnob.vercel.app",
     repo: "https://github.com/arnobpaul46/assignment-eight",
-    tech: ["React", "Next.js", "Tailwind CSS", "MongoDB","GitHub"],
+    tech: ["React", "Next.js", "Tailwind CSS", "MongoDB", "GitHub"],
   },
 
   {
@@ -28,7 +28,7 @@ const projects = [
     image: "/keenkeeper.webp",
     live: "https://keen-keeper-arnob.vercel.app",
     repo: "https://github.com/arnobpaul46/assignment-seven",
-    tech: ["Next.js", "React", "Tailwind CSS","GitHub"],
+    tech: ["Next.js", "React", "Tailwind CSS", "GitHub"],
   },
 
   {
@@ -79,7 +79,7 @@ const ProjectPage = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
-        className="space-y-2"
+        className="space-y-6"
       >
         <motion.div
           variants={fadeUp}
@@ -123,26 +123,29 @@ const ProjectPage = () => {
           >
 
             {/* Project Image */}
-            <div className="relative h-56 w-full overflow-hidden">
+            {/* Project Image Area */}
+            <div className="relative h-64 w-full overflow-hidden border-b border-white/5">
 
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0b0f1a] to-transparent z-10"></div>
+              {/* ১. নিচের এই লাইনটি (Overlay) কালচে ভাবের মূল কারণ, এটি আমি হালকা করে দিয়েছি বা চাইলে পুরোপুরি মুছে দিতে পারেন */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0b0f1a]/40 to-transparent z-10"></div>
 
-              {/* Background Icon */}
-              <div className="absolute inset-0 flex items-center justify-center bg-blue-500/10 group-hover:scale-110 transition-transform duration-700">
-                <FaFolderOpen
-                  size={50}
-                  className="text-blue-500/20"
-                />
+              {/* ২. Background Icon - ইমেজ লোড হওয়ার আগে এটি দেখা যাবে */}
+              <div className="absolute inset-0 flex items-center justify-center bg-blue-500/5">
+                <FaFolderOpen size={40} className="text-blue-500/10" />
               </div>
 
-              {/* Image */}
-              <Image
-                src={project.image}
-                fill
-                className="object-cover group-hover:scale-110 transition-all duration-700"
-                alt={project.title}
-              />
+              {/* ৩. Image Component - ফিল্টার যোগ করা হয়েছে উজ্জ্বলতার জন্য */}
+              <div className="relative h-60 w-full overflow-hidden">
+    <Image
+      src={project.image}
+      fill
+      quality={100}
+      className="object-cover transition-transform duration-700 brightness-110 contrast-110 group-hover:scale-110 group-hover:brightness-125"
+      alt={project.title}
+    />
+    {/* Subtle gradient to make text below readable, but not making the image dark */}
+    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0b0f1a]/30 z-10"></div>
+  </div>
             </div>
 
             {/* Content */}

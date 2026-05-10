@@ -197,6 +197,10 @@ const AboutMePage = () => {
             </span>
 
             <span className="px-4 py-2 bg-white/5 rounded-full text-xs text-gray-300 border border-white/5 hover:border-blue-500/20 transition-all">
+              Better Auth
+            </span>
+
+            <span className="px-4 py-2 bg-white/5 rounded-full text-xs text-gray-300 border border-white/5 hover:border-blue-500/20 transition-all">
               Cyber Security
             </span>
 

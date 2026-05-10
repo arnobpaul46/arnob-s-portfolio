@@ -2,13 +2,17 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { HiOutlineHome, HiOutlineUser, HiOutlineBriefcase, HiOutlineChatAlt2 } from 'react-icons/hi';
+import { IoIosContact } from 'react-icons/io';
+import { IoHome } from 'react-icons/io5';
+import { MdOutlineHome } from 'react-icons/md';
+import { TiHomeOutline } from 'react-icons/ti';
 
 const Navbar = () => {
     const pathname = usePathname();
 
     const navLinks = [
-        { href: "/", icon: <HiOutlineHome size={20}/>, label: "Home" },
-        { href: "/about-me", icon: <HiOutlineUser size={20}/>, label: "About" },
+        { href: "/", icon: <MdOutlineHome size={20}/>, label: "Home" },
+        { href: "/about-me", icon: <IoIosContact size={20}/>, label: "About" },
         { href: "/projects", icon: <HiOutlineBriefcase size={20}/>, label: "Projects" },
         { href: "/contact", icon: <HiOutlineChatAlt2 size={20}/>, label: "Contact" },
     ];
