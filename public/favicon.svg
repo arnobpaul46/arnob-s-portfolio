@@ -1,0 +1,12 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M48.5 25L22 75H35.5L42 62H55L61.5 75H75L48.5 25ZM44.5 54L48.5 44L52.5 54H44.5Z" fill="white"/>
+  <path d="M52 28H72C85 28 85 48 72 48H58L50 63H41L54 38H72C80 38 80 33 72 33H56L52 28Z" fill="white"/>
+  
+
+  <defs>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+</svg>
