@@ -52,3 +52,21 @@ html {
   scroll-behavior: smooth;
 }
 
+/* globals.css ফাইলের নিচে এটি যোগ করুন */
+
+/* globals.css */
+
+/* globals.css */
+
+@media (min-width: 1024px) {
+  /* ডিফল্ট কার্সর হাইড করা */
+  * {
+    cursor: none !important;
+  }
+  
+  a, button {
+    cursor: none !important;
+  }
+}
+
+/* আপনার মেইন বডিতে যদি isolation-isolate থাকে সেটি মুছে দিন */

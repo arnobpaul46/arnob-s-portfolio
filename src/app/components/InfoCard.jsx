@@ -21,7 +21,7 @@ const InfoCard = () => {
                 <div className="text-center">
                     <h1 className="text-2xl font-bold tracking-tight">Arnob Paul</h1>
                     <p className="text-[10px] text-gray-400 mt-1 px-3 py-1 bg-white/5 rounded-full inline-block border border-white/10">
-                        Frontend Web Developer
+                        MERN Stack Developer
                     </p>
                 </div>
             </div>

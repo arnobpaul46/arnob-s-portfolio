@@ -9,7 +9,7 @@ const MainLayout = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
-    <div className="min-h-screen bg-[#020617] bg-[radial-gradient(circle_at_top_right,_#1e293b,_transparent)] p-0 md:p-8 lg:p-10 flex items-center justify-center relative selection:bg-blue-500/30 selection:text-blue-200 ">
+    <div className="min-h-screen antialiased bg-[#020617] bg-[radial-gradient(circle_at_top_right,_#1e293b,_transparent)] p-0 md:p-8 lg:p-10 flex items-center justify-center relative selection:bg-blue-500/30 selection:text-blue-200  isolation-isolate relative">
       
       <AnimatePresence>
         {isLoading && <LoadingScreen onFinished={() => setIsLoading(false)} />}

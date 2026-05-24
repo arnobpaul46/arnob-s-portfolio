@@ -101,7 +101,7 @@ const ProjectPage = () => {
             variants={fadeUp}
             whileHover={{ y: -8 }}
             transition={{ duration: 0.3 }}
-            className="group bg-white/5 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-md hover:bg-white/10 hover:border-blue-500/30 transition-all duration-500 flex flex-col"
+            className="group bg-transparent border border-white/10 rounded-3xl overflow-hidden backdrop-blur-md hover:bg-white/10 hover:border-blue-500/30 transition-all duration-500 flex flex-col"
           >
             {/* Project Image Area */}
             {/* Project Image Area - No Padding, Full Width */}
@@ -118,7 +118,7 @@ const ProjectPage = () => {
                 fill
                 quality={100}
                 className="object-cover object-top transition-all duration-700 
-               brightness-[1.02] contrast-[1.05] 
+               brightness-[1.02] rounded-t-3xl contrast-[1.05] 
                group-hover:scale-105 group-hover:brightness-110 p-2"
                 alt={project.title}
               />
