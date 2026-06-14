@@ -43,7 +43,7 @@ const InfoCard = () => {
                 </div>
             </div>
 
-            <Link href={"/"}><button className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-blue-700 to-sky-900 py-3 rounded-xl font-bold hover:shadow-blue-500/40 hover:-translate-y-1 hover:cursor-pointer">
+            <Link href={"/arnobpaul-resume.pdf"}><button className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-blue-700 to-sky-900 py-3 rounded-xl font-bold hover:shadow-blue-500/40 hover:-translate-y-1 hover:cursor-pointer">
                 Download My CV <FaDownload size={12} />
             </button></Link>
         </div>
